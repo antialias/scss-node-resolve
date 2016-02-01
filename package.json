@@ -1,0 +1,32 @@
+{
+  "name": "scss-node-resolve",
+  "version": "1.0.0",
+  "description": "",
+  "author": "1stdibs.com, Inc.",
+  "scripts": {
+    "test": "mocha",
+    "gitlint": "dibslint --git --warnings",
+    "lint": "dibslint --root=."
+  },
+  "main": "index.js",
+  "pre-commit": {
+    "run": [
+      "gitlint"
+    ]
+  },
+  "devDependencies": {
+    "dibslint": "^1.2.4",
+    "empty-module": "0.0.2",
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dibslint": "^1.5.2",
+    "pre-commit": "^1.1.2",
+    "resolve": "^1.1.7"
+  },
+  "license": "ISC"
+}
