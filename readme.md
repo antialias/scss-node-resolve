@@ -1,4 +1,5 @@
 # scss-node-resolve
+
 [importer for `node-sass`](https://github.com/sass/node-sass#importer--v200---experimental) that resolves paths using [`resolve`](https://www.npmjs.com/package/resolve)
 
 ##installation:
