@@ -1,6 +1,6 @@
 {
   "name": "scss-node-resolve",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "import scss files using node resolver",
   "author": "1stdibs.com, Inc.",
   "scripts": {
