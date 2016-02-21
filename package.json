@@ -28,5 +28,13 @@
     "pre-commit": "^1.1.2",
     "resolve": "^1.1.7"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antialias/scss-node-resolve.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antialias/scss-node-resolve/issues"
+  },
+  "homepage": "https://github.com/antialias/scss-node-resolve#readme"
 }
