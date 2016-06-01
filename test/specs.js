@@ -1,8 +1,7 @@
 "use strict";
-var scssNodeResolve = require('../index');
-var assert = require('assert');
-var resolve = require('resolve');
-var path = require('path');
+const scssNodeResolve = require('../index');
+const assert = require('assert');
+const path = require('path');
 describe("scss-node-resolve", function () {
     it("should no worry about paths that don't begin with a tilde", function () {
         assert.deepEqual(scssNodeResolve('foo/bar/foo'), {
@@ -30,6 +29,18 @@ describe("scss-node-resolve", function () {
             path.join(
                 __dirname,
                 '../node_modules/empty-module/index.js'
+            )
+        );
+    });
+    it('should resolve like node resolve when path begins with a tilde and the filename starts with an underscore', function () {
+        assert.equal(
+            scssNodeResolve(
+                '~scsstest/foo',
+                __dirname + '/.'
+            ).file,
+            path.join(
+                __dirname,
+                './node_modules/scsstest/_foo.scss'
             )
         );
     });

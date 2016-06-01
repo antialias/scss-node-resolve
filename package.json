@@ -5,8 +5,8 @@
   "author": "1stdibs.com, Inc.",
   "scripts": {
     "test": "mocha",
-    "gitlint": "dibslint --git --warnings",
-    "lint": "dibslint --root=."
+    "gitlint": "dibslint --git --es6 --warnings",
+    "lint": "dibslint --es6 --root=."
   },
   "main": "index.js",
   "pre-commit": {
